@@ -1,0 +1,11 @@
+{
+  "name": "LeetSphereBackEnd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/imtiaz1710/LeetSphereBackEnd.git",
+  "author": "imtiaz1710 <imtiaz.mehedi.iubat@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
