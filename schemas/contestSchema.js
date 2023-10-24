@@ -3,12 +3,12 @@ const mongoose = require('mongoose');
 const contestSchema = mongoose.Schema({
     title: {
         type: 'string',
-        require: true
+        required: true
     },
     description: String,
     prolemList: [String],
     startDate: {type: Date, default: Date.now },
-    endDate: { type: Date, require: true }
+    endDate: { type: Date, required: true }
 });
 
 
