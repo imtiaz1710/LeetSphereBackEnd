@@ -2,9 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const contestHandler = require('./routeHandler/contestHandler');
 const cors = require('cors');
+const bodyParser = require('body-parser');
+const jwt = require('jsonwebtoken');
 
 const app = express();
 app.use(express.json());
+app.use(bodyParser.json());
 const port = 3000;
 
 //database connection with mongoose
@@ -22,3 +25,4 @@ app.listen(port, () => {
 
 app.use(cors());
 app.use("/contest", contestHandler);
+app.use("/auth", appAuthHandler);
